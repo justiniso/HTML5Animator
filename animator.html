@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC>
+
+
+<!--
+
+▄██████████████▄▐█▄▄▄▄█▌
+██████▌▄▌▄▐▌▄▐▌█▌▀▀██▀▀
+████▄█▌▀▌▀▐▌▀▐▌▀█▄▄█▌
+▄▄▄▄▄██████████████▀
+
+-->
+
+<html>
+	<head>
+		<link type="text/css" href="css/astyle.css" rel="stylesheet" >
+		<link type="text/css" href="css/smoothness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/JavaScript" src="js/animation.js"></script>
+		
+
+	</head>
+
+
+	<body>
+		
+		<!-- EDIT MODE ONLY -->
+		<div id="header">
+			<a href="#"><div id="playButton"></div></a>
+
+		</div>
+
+		<div id="sidebar">
+
+			<div id="accordion">
+				<h3><a href="#">Canvas Properties</a></h3>
+			    <div class="accordionContent">
+			    	<br><div>Double-click the canvas to add an element</div><br>
+			    	<form id="c_propertiesForm" class="formHeaders">
+
+						<span>Opacity</span><input id="c_opacity" class="c_properties" type="text" />
+						<span>Width</span><input id="c_width" class="c_properties" type="text" />
+						<span>Height</span><input id="c_height" class="c_properties" type="text" />
+					</form>
+				</div>
+			    <h3><a href="#">Element Properties</a></h3>
+			    <div class="accordionContent">
+			    	<form id="e_propertiesForm" class="formHeaders">
+						
+						<span id="e_displayID">{No element selected}</span>
+						<br>
+						<span>Element Type</span><select id="e_type" class="textForm">
+							<option value="element">Empty Element</option>
+							<option value="shape">Shape</option>
+							<option value="text">Text Box</option>
+							<option value="image">Image</option>
+						</select>
+
+						<div id="textForm">
+							<span>Text</span><input id="e_text" class="e_properties" type="text" />
+							<span>Font</span><select id="e_font-family" class="textForm">
+								<option value="helvetica">Helvetica</option>
+								<option value="times new roman">Times New Roman</option>
+								<option value="arial">Arial</option>
+							</select>
+							<span>Font Size</span><select id="e_font-size" class="textForm">
+								<option value="10">10</option>
+								<option value="12">12</option>
+								<option value="14">14</option>
+								<option value="16">16</option>
+								<option value="18">18</option>
+								<option value="20">20</option>
+								<option value="24">24</option>
+								<option value="48">48</option>
+								<option value="72">72</option>
+							</select>
+						</div>
+
+
+						<span>Opacity</span><input id="e_opacity" class="e_properties" type="text" />
+
+						
+
+						<span>Width</span><input id="e_width" class="e_properties" type="text" />
+						<span>Height</span><input id="e_height" class="e_properties" type="text" />
+						<span>X-Position</span><input id="e_left" class="e_properties" type="text" />
+						<span>Y-Position</span><input id="e_top" class="e_properties" type="text" />
+						<span>Z-Position</span><input id="e_z-index" class="e_properties" type="text" />
+
+					</form>
+				</div>
+				<h3><a href="#">Animations</a></h3>
+				<div class="accordionContent">
+					<form id="a_propertiesForm" class="formHeaders">
+						<span>Opacity</span><input id="a_opacity" class="a_properties" type="text" />
+						<span>Start Time</span><input id="a_start" class="a_properties" type="text" />
+						<span>Duration</span><input id="a_duration" class="a_properties" type="text" />
+						<span>Width</span><input id="a_width" class="a_properties" type="text" />
+						<span>Height</span><input id="a_height" class="a_properties" type="text" />
+						<span>X-Position</span><input id="a_left" class="a_properties" type="text" />
+						<span>Y-Position</span><input id="a_top" class="a_properties" type="text" />
+						<span>Z-Position</span><input id="e_z-index" class="a_properties" type="text" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+	
+
+
+		<!-- END OF EDIT MODE -->
+
+		<div id="content">
+			<div id="outer">
+				<canvas id="mainCanvas"></canvas>
+				<!-- Elements are added here -->
+
+			</div>
+		</div>
+
+
+
+
+	</body>
+
+
+
+
+
+
+
+
+</html>

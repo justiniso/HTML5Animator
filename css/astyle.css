@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 40 0 0 200; /* Must match sidebar width */
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+#header {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	margin: 0;
+
+	/* Header Gradient */
+	background: rgb(0,183,234); /* Old browsers */ background: -moz-linear-gradient(top,  rgba(0,183,234,1) 0%, rgba(0,158,195,1) 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,183,234,1)), color-stop(100%,rgba(0,158,195,1))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%); /* IE10+ */ background: linear-gradient(top,  rgba(0,183,234,1) 0%,rgba(0,158,195,1) 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+}
+
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 40 0 100 0;
+	width: 200px; /* Must match body padding */
+	height: 100%;
+	padding: 5px;
+	background: #F5F5F5;
+
+	overflow: scroll;
+
+}
+
+#playButton {
+	position: absolute;
+	right: 100px;
+	width: 50px;
+	height: 34px;
+	background-image: url('../images/playbutton.png');
+}
+#content {
+
+	padding: 40 40 0 40;
+	background: #F5F5F5;
+
+	width: 100%;
+	height: 100%;
+
+	overflow: scroll;
+
+}
+
+#outer {
+
+	width: 500px;
+	height: 400px;
+	position: relative;
+
+	margin: auto auto auto auto;
+
+	/* For visualization only */
+	border: 2px dotted black;
+	overflow: visible;
+
+
+	z-index = 0;
+
+}
+
+
+.elements {
+	width: 50px;
+	height: 50px;
+
+	position: absolute;
+
+	top: 10px;
+	left: 10px;
+}
+
+
+#start_element {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+
+	top: 100px;
+	left: 100px;
+
+	z-index = 1;
+}
+
+
+
+
+/* UI STUFF */
+#accordion * {
+	display: block;
+	font: 10.5px helvetica;
+}
+
+#accordion select{ 
+	max-width: 110px;
+	margin: 5 0 10 0;
+}
+#accordion input { 
+	max-width: 110px;
+	margin-bottom: 10px; 
+}
+
+.accordionContent {
+	max-height: 70%;
+	overflow: scroll;
+}
+

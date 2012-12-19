@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js"></script>
+</head>
+
+<body>
+
+	<style>
+	</style>
+
+	<script>
+		$(function() {
+			$("#slider-range").slider({
+				range: true,
+				min: 0,
+				max: 500,
+				values: [75, 300],
+				slide: function(event, ui) {
+					$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+				}
+			});
+
+			$("#amount").val("$" + $("slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+		});
+
+	</script>
+
+
+
+	<div id="slider-range"></div>
+	<p>
+		<label for="amount">amount:</label>
+		<input type="text" id="amount" style="border:0; color:#000000; font-weight: bold;" />
+	</p>
+
+
+
+</body>
+</html>
